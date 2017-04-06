@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
                     btSocket.connect();//start connection
                 }
             }
+            //גחכהחגחלדהמ
             catch (IOException e)
             {
                 ConnectSuccess = false;//if the try failed, you can check the exception here
