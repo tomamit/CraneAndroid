@@ -19,7 +19,7 @@ android {
         }
     }
     dataBinding {
-        enabled = false
+      enabled = false
     }
 }
 

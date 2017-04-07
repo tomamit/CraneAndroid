@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
         <activity android:name=".About" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".Controll" />
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Controll"
+            android:screenOrientation="landscape"/>
         <activity android:name=".Devices" />
         <activity android:name=".Manual"
             android:theme="@style/Theme.Intro"/>
