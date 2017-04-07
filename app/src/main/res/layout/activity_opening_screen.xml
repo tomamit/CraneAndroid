@@ -11,64 +11,60 @@
     tools:context="arduino.crane.OpeningScreen"
     android:background="@drawable/crane">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@id/button"
-        android:layout_centerVertical="true"
-        android:background="@drawable/shape"
-        android:gravity="center"
-        android:onClick="about"
-        android:text="about"
-        android:id="@+id/button2"
-        android:layout_marginTop="35.0dip" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/button2"
-        android:layout_below="@id/button2"
-        android:layout_marginTop="35.0dip"
-        android:background="@drawable/shape"
-        android:onClick="manual"
-        android:text="manual"
-        android:id="@+id/button3"
-        />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@id/button3"
-        android:layout_below="@id/button3"
-        android:layout_marginTop="35.0dip"
-        android:background="@drawable/shape"
-        android:gravity="center"
-        android:onClick="exit"
-        android:text="exit"
-        android:id="@+id/button4" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
         android:background="@drawable/shape"
         android:gravity="center"
         android:onClick="start"
         android:text="start"
         android:id="@+id/button"
+        android:layout_centerHorizontal="true"
         android:layout_above="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        />
 
-    <!--<TextView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:text="Arduino Crane"-->
-        <!--android:textAlignment="center"-->
-        <!--android:textColor="@color/red"-->
-        <!--android:textSize="45.0dip"-->
-        <!--android:textStyle="bold"-->
-        <!--android:typeface="serif"-->
-        <!--android:layout_alignParentTop="true"-->
-        <!--android:layout_centerHorizontal="true" />-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:onClick="about"
+        android:text="about"
+        android:id="@+id/button2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:onClick="exit"
+        android:text="exit"
+        android:id="@+id/button4"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape"
+        android:onClick="manual"
+        android:gravity="center"
+        android:text="manual"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="25dp"/>
+
+    </RelativeLayout>
+
 </RelativeLayout>

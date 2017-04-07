@@ -14,25 +14,16 @@ public class Manual extends IntroActivity {
     protected void onCreate(Bundle savedInstanceState) {
         setFullscreen(true);
         super.onCreate(savedInstanceState);
-
+        setSkipEnabled(false);
         setFinishEnabled(false);
-
+        setButtonBackVisible(false);
+        setButtonNextVisible(false);
         addSlide(new SimpleSlide.Builder()
                 .title("Getting Started")
                 .description(R.string.started)
                 .image(R.drawable.first)
                 .background(R.color.colorPrimary)
                 .backgroundDark(R.color.colorPrimaryDark)
-                .scrollable(true)
-                .build());
-
-        addSlide(new SimpleSlide.Builder()
-                .title("Getting Started")
-                .description(R.string.started)
-                .image(R.drawable.first)
-                .background(R.color.colorPrimary)
-                .backgroundDark(R.color.colorPrimaryDark)
-                .scrollable(true)
                 .build());
         addSlide(new SimpleSlide.Builder()
                 .title("Connecting")
@@ -40,7 +31,6 @@ public class Manual extends IntroActivity {
                 .image(R.drawable.connect)
                 .background(R.color.white)
                 .backgroundDark(R.color.whitedark)
-                .scrollable(true)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
@@ -49,7 +39,6 @@ public class Manual extends IntroActivity {
                 .image(R.drawable.auto)
                 .background(R.color.colorAccent)
                 .backgroundDark(R.color.colorAccentDark)
-                .scrollable(true)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
@@ -58,7 +47,6 @@ public class Manual extends IntroActivity {
                 .image(R.drawable.setuppic)
                 .background(R.color.red)
                 .backgroundDark(R.color.redDark)
-                .scrollable(true)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
@@ -67,7 +55,6 @@ public class Manual extends IntroActivity {
                 .image(R.drawable.manual)
                 .background(R.color.cyan)
                 .backgroundDark(R.color.cyanDark)
-                .scrollable(true)
                 .build());
 
         addSlide(new SimpleSlide.Builder()
@@ -83,8 +70,8 @@ public class Manual extends IntroActivity {
                         startActivity(new Intent(Manual.this, Devices.class));
                     }
                 })
-                .scrollable(true)
                 .build());
+
     }
 
 }
