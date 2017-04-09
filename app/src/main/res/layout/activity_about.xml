@@ -12,39 +12,39 @@
     tools:context="arduino.crane.About">
 
     <TextView
-        android:text="208010249"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView"
         android:layout_above="@+id/button"
         android:layout_centerHorizontal="true"
-        android:textSize="40sp"  />
+        android:text="208010249"
+        android:textSize="40sp" />
 
     <Button
-        android:text="back"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/button"
-        android:textSize="14sp"
-        android:onClick="back" />
+        android:onClick="back"
+        android:text="back"
+        android:textSize="14sp" />
 
     <TextView
-        android:text="תום עמית"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/textView2"
-        android:textSize="40sp"/>
+        android:text="תום עמית"
+        android:textSize="40sp" />
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/me"
-        android:id="@+id/imageView"
-        android:src="@drawable/me"
+        android:layout_above="@+id/button"
         android:layout_below="@+id/textView2"
-        android:layout_above="@+id/button"/>
+        android:src="@drawable/me"
+        app:srcCompat="@drawable/me" />
 </RelativeLayout>

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Arduino Crane</string>
-    <string name="auto">In the main page, the crane is controlled automatically. when you pick a color the crane will look for the cube in that color and pick it up.</string>
+    <string name="auto">In the main page, the crane is controlled automatically. When you pick a color the crane will look for the cube in that color and pick it up.</string>
     <string name="connect">In the first page you will see a list of all the devices your phone is paired with. In order to proceed, pick crane.</string>
     <string name="last">Have fun!</string>
     <string name="manual">In the manual control page, you can control the crane on your own. The up and down buttons will lift and lower the claw, and the right and left buttons move the crane on the track. You can also scan a color and the crane will tell you witch cube is in front of him(if present).</string>

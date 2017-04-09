@@ -11,16 +11,16 @@
     tools:context="arduino.crane.MainActivity">
 
     <Button
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:onClick="control"
-        android:text="manual control"
-        android:id="@+id/button5"
-        />
+        android:text="manual control" />
 
     <Button
+        android:id="@+id/blue"
         android:layout_width="200.0sp"
         android:layout_height="100.0sp"
         android:layout_alignParentStart="true"
@@ -29,10 +29,10 @@
         android:onClick="blue"
         android:text="blue"
         android:textColor="#ffffffff"
-        android:textSize="40.0sp"
-        android:id="@+id/blue" />
+        android:textSize="40.0sp" />
 
     <Button
+        android:id="@+id/red"
         android:layout_width="200.0sp"
         android:layout_height="100.0sp"
         android:layout_alignParentBottom="true"
@@ -42,10 +42,10 @@
         android:onClick="red"
         android:text="red"
         android:textColor="#ffffffff"
-        android:textSize="40.0sp"
-        android:id="@+id/red" />
+        android:textSize="40.0sp" />
 
     <Button
+        android:id="@+id/green"
         android:layout_width="200.0sp"
         android:layout_height="100.0sp"
         android:layout_alignParentEnd="true"
@@ -55,6 +55,5 @@
         android:onClick="green"
         android:text="green"
         android:textColor="#ffffffff"
-        android:textSize="40.0sp"
-        android:id="@+id/green" />
+        android:textSize="40.0sp" />
 </RelativeLayout>

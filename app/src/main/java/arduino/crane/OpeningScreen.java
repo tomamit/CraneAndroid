@@ -13,14 +13,16 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
 public class OpeningScreen extends AppCompatActivity {
-   SharedPreferences sharedPreferences;
+    SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_opening_screen);
         sharedPreferences = getPreferences(Context.MODE_PRIVATE);
     }
-    public void start(View v){
+
+    public void start(View v) {
         View checkBoxView = View.inflate(this, R.layout.dont_ask_me_again, null);
         final CheckBox checkBox = (CheckBox) checkBoxView.findViewById(R.id.checkBox);
         checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -28,7 +30,7 @@ public class OpeningScreen extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putBoolean("checked",checkBox.isChecked());
+                editor.putBoolean("checked", checkBox.isChecked());
                 editor.commit();
             }
         });
@@ -41,27 +43,29 @@ public class OpeningScreen extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        startActivity(new Intent(OpeningScreen.this,Manual.class));
-                    }})
+                        startActivity(new Intent(OpeningScreen.this, Manual.class));
+                    }
+                })
                 .setNegativeButton("I used the app before", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        startActivity(new Intent(OpeningScreen.this,Devices.class));
+                        startActivity(new Intent(OpeningScreen.this, Devices.class));
                     }
                 });
-        if (!sharedPreferences.getBoolean("checked",false))
+        if (!sharedPreferences.getBoolean("checked", false))
             builder.create().show();
         else
-            startActivity(new Intent(OpeningScreen.this,Devices.class));
+            startActivity(new Intent(OpeningScreen.this, Devices.class));
     }
 
-    public void about(View v){
-        startActivity(new Intent(OpeningScreen.this,About.class));
+    public void about(View v) {
+        startActivity(new Intent(OpeningScreen.this, About.class));
     }
 
-    public void manual(View v){
-        startActivity(new Intent(OpeningScreen.this,Manual.class));
+    public void manual(View v) {
+        startActivity(new Intent(OpeningScreen.this, Manual.class));
     }
-    public void exit(View v){
+
+    public void exit(View v) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Are you sure you want to exit?")
                 .setCancelable(false)
