@@ -41,10 +41,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
-        android:layout_below="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
         android:src="@drawable/me"
-        app:srcCompat="@drawable/me" />
+        app:srcCompat="@drawable/me"
+        android:gravity="center"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
